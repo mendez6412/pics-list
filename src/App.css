@@ -2,21 +2,41 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #09d3ac;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selectedCount {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.item {
+  flex: 0 0 32%;
+  margin: .5%;
+  height: 100%;
+  background-color: steelblue;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+h3 {
+  height: 100px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.selected {
+  background-color: palegoldenrod;
 }
