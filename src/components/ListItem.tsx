@@ -1,10 +1,10 @@
-import React, { FunctionComponent, useCallback } from 'react';
+import React, { FunctionComponent } from 'react';
 import { IPictureItem } from './List';
 
 export const ListItem: FunctionComponent<IPictureItem> = ({ id, url, title, isHidden, isSelected, onItemClick }) => {
-    const handleClick = useCallback(() => {
+    const handleClick = () => {
         onItemClick(id)
-    }, [])
+    }
 
     return (
         isHidden ? 

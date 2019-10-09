@@ -74,7 +74,6 @@ export class List extends Component<{}, ListState>  {
     }
 
     onItemClick = (id: string) => {
-        // TODO: Remove items when unselected
         const currentState = this.state && this.state.selected ? this.state.selected : [];
         const newPictures = {...this.state.pictures};
         newPictures[id].isSelected = !newPictures[id].isSelected;
